@@ -11,7 +11,7 @@ import main.SlackMember;
 /**
  * 初期化用のプログラム
  * id:slackid対応表の永続化ファイル(slack-member.properties)を作成する。
- * @author riku
+ * @author riku yamamoto
  *
  */
 public class InitMembers {

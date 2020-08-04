@@ -7,7 +7,7 @@ import util.InitMembers;
 import java.io.*;
 
 /**
- * SlackBotによる通知を行う
+ * SlackBotによる通知を行う。実行はこのクラス。
  *
  * @author riku yamamoto
  *

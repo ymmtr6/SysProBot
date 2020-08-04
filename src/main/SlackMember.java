@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * 講義を受けている人を管理する。
  *
- * @author riku
+ * @author riku yamamoto
  *
  */
 public class SlackMember {
