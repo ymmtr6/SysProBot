@@ -46,7 +46,9 @@ PlainTextMode: false
 【最終確認】Slack通知を行いますか? [y/N]:
 ```
 ログを学籍番号毎に分割し、詳細表示を行う。
-最終確認でyを入力すれば、Botが各ユーザに通知を行う。
+最終確認でyを入力すれば、図のようにBotが各ユーザに通知を行う。
+
+![slack_output_image](img/output_image.png)
 
 他の使い方に関しては
 
