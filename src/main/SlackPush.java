@@ -9,7 +9,7 @@ import java.util.Properties;
 /**
  * Slackを用いて通知を送る
  *
- * @author riku
+ * @author riku yamamoto
  *
  */
 public class SlackPush {
