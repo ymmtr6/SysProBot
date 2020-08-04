@@ -12,7 +12,7 @@ $ mv _secret.properties secret.properties
 $ nano secret.properties
 ```
 
-3. 学籍番号のリストが入ったファイルを読み込ませ、SlackIDとの対応表(slack-member.properties)を作成する。
+3. 学籍番号のリストが入ったファイル(学籍番号10桁、改行区切り)を読み込ませ、SlackIDとの対応表(slack-member.properties)を作成する。
 ```
 $ java main.BotNotification --userfile userid.txt
 ```
@@ -22,7 +22,7 @@ $ java main.BotNotification --userfile userid.txt
 学籍番号毎に区切られたログファイルのパスを入れてやると、
 
 ```
-$ java main.BotNotification sample.txt 
+$ java main.BotNotification sample.txt
 [SlackMember]slack-member.propertiesの読み込みに成功しました。
 ---19XXXXXXXX---
 19XXXXXXXX
@@ -38,13 +38,19 @@ Botを改良したのでテストします。
 ################################
 件数: 2
 送信人数: 1
-送信宛先一覧: 
+送信宛先一覧:
 19XXXXXXXX(WXXXXXXXXX)
 19XXXXXXXX(未登録)
 PlainTextMode: false
 
-【最終確認】Slack通知を行いますか? [y/N]: 
+【最終確認】Slack通知を行いますか? [y/N]:
 ```
 ログを学籍番号毎に分割し、詳細表示を行う。
 最終確認でyを入力すれば、Botが各ユーザに通知を行う。
 
+他の使い方に関しては
+
+```
+$ java main.BotNotification -h
+```
+を参照すること。
